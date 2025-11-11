@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* import font file */
+@font-face {
+   src: url('Precious.ttf');
+   font-family: Precious;
+}
+
+@font-face {
+   src: url('Avara.tff');
+   font-family: Avara;
+}
+
+section > aside {
+   float: right; /* push content to the right */
+   margin: 0 0 0 20%;
+}
+
+/* id selector */
+/* 0.9 transparency */
+section#s1 > nav {
+   background-color: rgba(60, 114, 66, 0.9);
+}
+
+section#s1 {
+   background-color: rgb(9, 73, 15);
+   color: rgb(184, 247, 236);
+}
+
+section#s1 > h2 {
+   font-family: Precious;
+   font-size: 2em; /* 200% */
+}
+
+section#s2 nav {
+   background-color: rgba(177, 184, 250, 0.9);
+}
+
+section#s2 h2 {
+   font-family: Avara;
+   font-size: 2em;
+}
+
+section#s2 {
+   background-color: rgb(90, 28, 131);
+   color: rgb(170,156, 246);
+}
+
+section {
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+   padding: 20px;
+}
+
+section p {
+   /* em is a scalable font */
+   /* the size depends on the current font size */
+   /* 1.1em means 10% greater than current/parent font size */
+   /* if current font size is 10px, 1.1 means 11px */
+   font-size: 1.1em;
+   padding: 5px 15px 20px 25px;
+}
+
