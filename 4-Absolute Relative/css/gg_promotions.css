@@ -1,0 +1,166 @@
+@font-face {
+   /* "../fonts/" means get out of current folder ("css") */
+   /* and go into "fonts" folder */
+   src: url('../fonts/cac_champagne.ttf');
+   font-family: Champagne;
+}
+
+/* Page Body Styles */
+html{
+   background-color: rgb(59, 100, 56);
+}
+
+body{
+   background-color: rgb(44, 85, 42);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   max-width: 1024px;
+   margin: 20px auto; 
+}
+
+/* Image Styles */
+header > img {
+   width: 100%; /* in this case, it means 1024px */
+}
+
+/* Horizontal Navigation Styles */
+header > nav {
+   display: table;
+   width: 100%;
+}
+
+header > nav > ul {
+   display: table-row;
+}
+
+header > nav > ul li{
+   display: table-cell;
+   text-align: center;
+}
+
+nav  a{
+   font-family: Champagne;
+   font-size: 1.5em;
+   line-height: 2em;
+   text-decoration:none;
+}
+
+/* "a:link" is called a pseudo-class selector */
+nav a:link{
+   color: white;
+}
+
+/* "a:hover" is a pseudo-class selector */
+nav a:hover{
+   color: yellow;
+}
+
+nav a:visited {
+   color: red;
+}
+
+/* Row Styles */
+/* "div.row" is called class selector */
+/* it applies to "div" with "class=row" */
+div.row {
+   display: table;
+   width: 100%;
+   border: yellow solid; /* can remove if not needed */
+}
+
+/* Column Styles */
+div.col-2-3{
+   display:table-cell;
+   width: 66.7%;
+   border: red solid;/* can remove if not needed */
+}
+
+div.col-1-3{
+   display: table-cell;
+   width: 33.3%;
+   border: red solid;/* can remove if not needed */
+}
+
+/* Specials Styles */
+div#promoItems > div.col-1-3 {
+   background-color: rgb(142, 187, 140);
+   border: green dashed 1px;
+}
+
+/* applies to div with 'class' with name starting with "col" */
+/* in this case, it applies to "col-1-3" and "col-2-3"*/
+div[class^="col"] > img {
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box; /* the width will include padding, margin etc */
+}
+
+div[class^="col"] > h2 {
+   font-size: 1.5em;
+   font-family: Champagne;
+   text-align: center;
+}
+
+/* Ingredient Styles */
+/* id select must use # symbol. Class selector use . */
+div#ingredients {
+   background-color: rgb(250, 210, 210);
+   position: relative;
+   overflow: auto; /* auto display scrollbar when cannot fit */
+
+}
+/*
+
+*/
+div#ingredients p {
+   font-size: 0.9em;
+   line-height: 0.9em;
+}
+
+div#ingredient1 {
+   position: absolute;
+   width: 35%;
+   top: 80px;
+   left: 10px;
+}
+
+div#ingredient2 {
+   position: absolute;
+   width: 35%;
+   top: 180px;
+   right: 10px;
+}
+
+div#ingredient3 {
+   position: absolute;
+   width: 35%;
+   top: 380px;
+   left: 10px;
+}
+
+div#ingredient4 {
+   position: absolute;
+   width: 35%;
+   top: 580px;
+   right: 10px;
+}
+
+div#ingredient5 {
+   position: absolute;
+   width: 35%;
+   top: 580px;
+   right: 10px;
+}
+
+div#ingredients img {
+   width: 100%
+}
+
+/* Footer Styles */
+footer{
+   font-size: 0.9em; /* 90% of parent(current) font size */
+   color: white;
+   text-align: center;
+   padding: 10px;
+   background-color: black;
+
+}
